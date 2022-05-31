@@ -1,6 +1,9 @@
 //Import the content from style.css
 import './style.css';
 
+//Import pictures
+import background from "./restaurant.jpg";
+
 //Import all the different content for the site
 import contactContent from "./Contact";
 import landingContent from "./Landing-page";
