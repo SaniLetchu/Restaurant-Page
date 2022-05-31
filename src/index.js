@@ -93,9 +93,9 @@ divcontent.setAttribute("id", "content");
 
 document.body.appendChild(createHeader());
 document.body.appendChild(createNav());
-//Initial content is landingContent
 document.body.appendChild(divcontent);
 
-
+//Initial content is landingContent
+createContent(landingContent);
 
 document.body.appendChild(createFooter());

@@ -37,7 +37,9 @@ li:active {
     color: rgb(233, 233, 233);
 }
 
+
 body {
+    min-height: 100vh;
     transition: background-image 0.5s;
     margin: 0;
     background-image: url("./restaurant.jpg");
@@ -48,9 +50,12 @@ body {
 }
 
 #content {
+    flex: 1;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    gap: 10px;
+    align-items: center;
     min-width: max(600px, 40vw);
     align-self: center;
     margin: 100px 30vw;
@@ -69,6 +74,27 @@ h1 {
     font-weight: lighter;
     font-size: 70px;
     margin: 20px;
+}
+
+.undertext {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 200;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.profilepicture {
+    border: 1px solid;
+    border-radius: 100%;
+    max-height: 500px;
+    box-shadow: 0 0 100px 100px black inset;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 40px;
 }
 
 .footer {
