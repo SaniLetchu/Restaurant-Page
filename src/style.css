@@ -38,6 +38,7 @@ li:active {
 }
 
 body {
+    transition: background-image 0.5s;
     margin: 0;
     background-image: url("./restaurant.jpg");
     background-size: cover;
@@ -47,6 +48,8 @@ body {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     min-width: max(600px, 40vw);
     align-self: center;

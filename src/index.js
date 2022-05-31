@@ -1,10 +1,15 @@
 //Import the content from style.css
 import './style.css';
 
+//Import the background images
+import menuimage from './menu.jpg';
+import landingimage from './restaurant.jpg';
+import contactimage from './contact.jpg';
+
 //Import all the different content for the site
 import contactContent from "./Contact";
 import landingContent from "./Landing-page";
-import menuContent from "./Contact";
+import menuContent from "./Menu";
 
 
 //Creates the header for the site
@@ -34,6 +39,18 @@ function createNav() {
     menu.textContent = "Menu";
     let contact = document.createElement("li");
     contact.textContent = "Contact";
+
+    //Create eventlisteners for all of the buttons
+    home.addEventListener("click", function() {
+        createContent(landingContent);
+    });
+    menu.addEventListener("click", function() {
+        createContent(menuContent);
+    });
+    contact.addEventListener("click", function() {
+        createContent(contactContent);
+    });
+
     ul.appendChild(home);
     ul.appendChild(menu);
     ul.appendChild(contact);
@@ -44,7 +61,17 @@ function createNav() {
 
 //Creates the content in the #content div
 function createContent(content) {
-    divcontent.replaceChildren(content);
+    if(content === menuContent) {
+        document.body.style.backgroundImage = `url('${menuimage}')`;
+    }
+    if(content === contactContent) {
+        document.body.style.backgroundImage = `url('${contactimage}')`;
+    }
+    if(content === landingContent) {
+        document.body.style.backgroundImage = `url('${landingimage}')`;
+    }
+    divcontent.replaceWith(content)
+    divcontent = content;
 }
 
 //Creates the footer for the site
@@ -60,11 +87,15 @@ function createFooter() {
     
 }
 //Create the div for content
-const divcontent = document.createElement("div");
+let divcontent = document.createElement("div");
 divcontent.setAttribute("id", "content");
 
 
 document.body.appendChild(createHeader());
 document.body.appendChild(createNav());
+//Initial content is landingContent
 document.body.appendChild(divcontent);
+
+
+
 document.body.appendChild(createFooter());
