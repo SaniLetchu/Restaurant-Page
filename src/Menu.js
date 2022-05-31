@@ -14,6 +14,11 @@ let content = document.createElement("div");
 content.setAttribute("id", "content");
 content.classList.add("menu");
 
+//Title
+let h2 = document.createElement("h2");
+h2.textContent = "Menu";
+content.appendChild(h2);
+
 //Actual content inside the div
 let foods = document.createElement("div");
 foods.setAttribute("id", "foods");
