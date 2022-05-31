@@ -4,7 +4,11 @@
   "description": "Project: Restaurant Page from Odin Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "server": "node server.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,17 @@
   },
   "homepage": "https://github.com/SaniLetchu/Restaurant-Page#readme",
   "devDependencies": {
-    "webpack-cli": "^4.9.2"
+    "css-loader": "^6.7.1",
+    "csv-loader": "^3.0.3",
+    "express": "^4.18.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-middleware": "^5.3.3",
+    "webpack-dev-server": "^4.9.0",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
