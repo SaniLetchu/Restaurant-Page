@@ -97,6 +97,8 @@ iframe {
   
 
 body {
+    background-repeat: no-repeat;
+    background-position: center center;
     overflow-x: hidden;
     min-width: 100vw;
     min-height: 100vh;
