@@ -24,6 +24,17 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+li:active {
+    transform: translateY(0px);
+    color: rgb(233, 233, 233);
 }
 
 body {
