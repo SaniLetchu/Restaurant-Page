@@ -5,5 +5,8 @@ Still practicing DOM manipulation and now first time learning webpack, npm and o
 
 Also my first website that looks decent on mobile.
 
+-Negatives:
+Bit slow, likely due to high quality images
+
 Credit to this dude for giving inspiration for the website design:
 https://github.com/michalosman/restaurant-page
