@@ -127,6 +127,7 @@ body {
 
 
 nav {
+    margin-top: 0;
     z-index: 20;
     position: sticky;
     top: 0;
@@ -143,11 +144,20 @@ nav {
     }
 }
 
+p {
+    text-align: center;
+}
+
 h1 {
     font-family: 'fancyfont';
     font-weight: lighter;
     font-size: 70px;
-    margin: 20px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+h2 {
+    text-align: center;
 }
 
 .undertext {
@@ -179,9 +189,19 @@ h2 {
 }
 
 .header {
+    margin-bottom: 0;
     display: flex;
     overflow: auto;
     flex-direction: column;
     background-color: rgb(15, 15, 12);
     align-items: center;
+}
+
+@media (max-width: 700px) {
+    #content {
+        width: 100%;
+        min-width: 100%;
+        padding: 20px 0px;
+        margin: 100px 0px;
+    }
 }
