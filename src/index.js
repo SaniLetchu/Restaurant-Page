@@ -70,8 +70,10 @@ function createContent(content) {
     if(content === landingContent) {
         document.body.style.backgroundImage = `url('${landingimage}')`;
     }
+    
     divcontent.replaceWith(content)
     divcontent = content;
+   
 }
 
 //Creates the footer for the site

@@ -50,6 +50,8 @@ body {
 }
 
 #content {
+    transition: 0.5s;
+    animation: fadeIn 0.5s;
     flex: 1;
     padding: 20px 40px;
     display: flex;
@@ -60,13 +62,22 @@ body {
     align-self: center;
     margin: 100px 30vw;
     background-color: rgba(0, 0, 0, 0.75);;
-
 }
 
 nav {
     position: sticky;
     top: 0;
     background-color: rgb(15, 15, 15);
+}
+
+/*Animation to fadein*/
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 
 h1 {
